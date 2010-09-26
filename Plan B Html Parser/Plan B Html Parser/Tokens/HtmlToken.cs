@@ -6,7 +6,7 @@ using System.Text.RegularExpressions;
 
 namespace PlanB.Html.Tokens
 {
-    public class HtmlToken
+    internal class HtmlToken
     {
         public List<KeyValuePair<string, string>> Attributes { get; set; }
 

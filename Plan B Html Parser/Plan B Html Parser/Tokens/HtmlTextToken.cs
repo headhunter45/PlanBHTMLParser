@@ -5,7 +5,7 @@ using System.Text;
 
 namespace PlanB.Html.Tokens
 {
-    public class HtmlTextToken: HtmlToken
+    internal class HtmlTextToken: HtmlToken
     {
         public string Text { get; set; }
 

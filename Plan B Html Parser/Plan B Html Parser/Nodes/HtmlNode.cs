@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Microsoft.Xna.Framework;
+using PlanB.Html.Utility;
 
 namespace PlanB.Html.Nodes
 {
@@ -180,7 +182,24 @@ namespace PlanB.Html.Nodes
 
         public void AddStyle(KeyValuePair<string, string> style)
         {
-            KeyValuePair<string, string> newStyle = new KeyValuePair<string,string>(style.Key.ToLower(), style.Value);
+            string key = style.Key.ToLower();
+            string value = style.Value;
+
+            if (key == "color")
+            {
+                Color color = ColorHelper.FromCss(value);
+                //TODO Update this to support rgba maybe
+                if (color.A == 0xff)
+                {
+                    value = String.Format("rgb({0}, {1}, {2})", color.R, color.G, color.B);
+                }
+                else
+                {
+                    value = String.Format("rgba({0}, {1}, {2}, {3})", color.R, color.G, color.B, color.A);
+                }
+            }
+
+            KeyValuePair<string, string> newStyle = new KeyValuePair<string,string>(key, value);
 
             Styles.RemoveAll(i => i.Key == newStyle.Key);
             Styles.Add(newStyle);

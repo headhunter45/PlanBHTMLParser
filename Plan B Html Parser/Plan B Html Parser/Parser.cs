@@ -19,7 +19,7 @@ namespace PlanB.Html
 {
     public class Parser
     {
-        public static List<HtmlToken> Tokenize(string htmlText)
+        internal static List<HtmlToken> Tokenize(string htmlText)
         {
             List<HtmlToken> tokens = new List<HtmlToken>();
 
@@ -119,7 +119,7 @@ namespace PlanB.Html
             return tokens;
         }
 
-        public static HtmlNode Parse(List<HtmlToken> tokens)
+        internal static HtmlNode Parse(List<HtmlToken> tokens)
         {
             HtmlNode rootNode = new HtmlDocumentNode();
             
