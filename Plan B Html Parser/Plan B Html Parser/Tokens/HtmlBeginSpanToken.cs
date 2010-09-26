@@ -5,7 +5,7 @@ using System.Text;
 
 namespace PlanB.Html.Tokens
 {
-    public class HtmlBeginSpanToken: HtmlToken
+    internal class HtmlBeginSpanToken: HtmlToken
     {
         public override string ToString()
         {

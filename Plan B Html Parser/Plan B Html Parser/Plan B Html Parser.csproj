@@ -135,6 +135,7 @@
     <Compile Include="Tokens\HtmlImgToken.cs" />
     <Compile Include="Tokens\HtmlTextToken.cs" />
     <Compile Include="Tokens\HtmlToken.cs" />
+    <Compile Include="Utility\ColorHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <NestedContentProject Include="Content\Content.contentproj">
