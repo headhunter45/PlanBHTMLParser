@@ -188,7 +188,7 @@ namespace PlanB.Html.Nodes
             if (key == "color")
             {
                 Color color = ColorHelper.FromCss(value);
-                //TODO Update this to support rgba maybe
+                
                 if (color.A == 0xff)
                 {
                     value = String.Format("rgb({0}, {1}, {2})", color.R, color.G, color.B);

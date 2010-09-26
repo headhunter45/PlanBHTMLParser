@@ -282,7 +282,7 @@ namespace TestProject1
 
             KeyValuePair<string, string> spanColorStyle = spanColorStyles.First();
 
-            Assert.AreEqual<string>(spanColorStyle.Value, "rgb(0, 0, 0)");
+            Assert.AreEqual<string>("rgb(0, 0, 0)", spanColorStyle.Value);
             //Assert.AreEqual<string>(spanColorStyle.Value, "black");
             /**/
 
