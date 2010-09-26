@@ -260,35 +260,30 @@ namespace TestProject1
         public void Test_Parse_SpanWithStyle()
         {
             String htmlText = "<span style=\"color:black\">asdf</span>";
-            String expectedResult = "<span style=\"color:black;\">asdf</span>";
+            String expectedResult = "<span style=\"color:rgb(0, 0, 0);\">asdf</span>";
 
             HtmlNode htmlNode = Parser.Parse(htmlText);
 
             Assert.IsNotNull(htmlNode, "The HtmlNode returned by the parser is null.");
 
             Assert.AreEqual<int>(htmlNode.Children.Count, 1);
-            
+
             Assert.IsInstanceOfType(htmlNode.Children[0], typeof(HtmlSpanNode));
 
             HtmlSpanNode spanNode = htmlNode.Children[0] as HtmlSpanNode;
 
-            IEnumerable<KeyValuePair<string,string>> spanStyleAttributes = spanNode.Attributes.Where(i=>i.Key == "style");
-            /*
-            Assert.AreEqual<int>(spanStyleAttributes.Count(), 1);
+            IEnumerable<KeyValuePair<string, string>> spanStyleAttributes = spanNode.Attributes.Where(i => i.Key == "style");
 
-            KeyValuePair<string, string> spanStyleAttribute = spanStyleAttributes.First();
+            Assert.AreEqual<int>(spanStyleAttributes.Count(), 0);
 
-            Assert.AreEqual<string>(spanStyleAttribute.Value, "color:black");
-            /**/
-            
             IEnumerable<KeyValuePair<string, string>> spanColorStyles = spanNode.Styles.Where(i => i.Key == "color");
 
             Assert.AreEqual<int>(spanColorStyles.Count(), 1);
 
             KeyValuePair<string, string> spanColorStyle = spanColorStyles.First();
 
-            //Assert.AreEqual<string>(spanColorStyle.Value, "rgb(0,0,0)");
-            Assert.AreEqual<string>(spanColorStyle.Value, "black");
+            Assert.AreEqual<string>("rgb(0, 0, 0)", spanColorStyle.Value);
+            //Assert.AreEqual<string>(spanColorStyle.Value, "black");
             /**/
 
             Assert.AreEqual(expectedResult, htmlNode.InnerHtml);
