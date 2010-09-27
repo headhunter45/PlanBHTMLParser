@@ -9,5 +9,10 @@ namespace PlanB.Html.Nodes
     {
         public static string StaticTagName { get { return "img"; } }
         public override string TagName { get { return StaticTagName; } }
+
+        public HtmlImgNode()
+        {
+            Type = HtmlNodeType.Img;
+        }
     }
 }
