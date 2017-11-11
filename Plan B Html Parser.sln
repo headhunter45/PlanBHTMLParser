@@ -1,28 +1,32 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plan B Html Parser", "Plan B Html Parser\Plan B Html Parser.csproj", "{A6FA0455-ACB5-4E80-9E58-6B79976AA717}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject1", "TestProject1\TestProject1.csproj", "{9E7D5692-C2E9-4219-977E-143CC75B5737}"
+EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{AD007B35-38A3-47C0-B9DE-A1805B67270C}"
 	ProjectSection(SolutionItems) = preProject
 		LocalTestRun.testrunconfig = LocalTestRun.testrunconfig
 		Plan B Html Parser.vsmdi = Plan B Html Parser.vsmdi
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plan B Html Parser", "Plan B Html Parser\Plan B Html Parser.csproj", "{A6FA0455-ACB5-4E80-9E58-6B79976AA717}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject1", "TestProject1\TestProject1.csproj", "{9E7D5692-C2E9-4219-977E-143CC75B5737}"
-EndProject
 Global
 	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 3
+		SccNumberOfProjects = 4
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs14
+		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/TFS14
 		SccLocalPath0 = .
-		SccProjectUniqueName1 = Plan\u0020B\u0020Html\u0020Parser\\Plan\u0020B\u0020Html\u0020Parser.csproj
-		SccProjectName1 = Plan\u0020B\u0020Html\u0020Parser
-		SccLocalPath1 = Plan\u0020B\u0020Html\u0020Parser
-		SccProjectUniqueName2 = TestProject1\\TestProject1.csproj
-		SccProjectName2 = TestProject1
-		SccLocalPath2 = TestProject1
+		SccProjectUniqueName1 = Plan\u0020B\u0020Html\u0020Parser\\Content\\Content.contentproj
+		SccProjectTopLevelParentUniqueName1 = Plan\u0020B\u0020Html\u0020Parser\\Plan\u0020B\u0020Html\u0020Parser.csproj
+		SccProjectName1 = Plan\u0020B\u0020Html\u0020Parser/Content
+		SccLocalPath1 = Plan\u0020B\u0020Html\u0020Parser\\Content
+		SccProjectUniqueName2 = Plan\u0020B\u0020Html\u0020Parser\\Plan\u0020B\u0020Html\u0020Parser.csproj
+		SccProjectName2 = Plan\u0020B\u0020Html\u0020Parser
+		SccLocalPath2 = Plan\u0020B\u0020Html\u0020Parser
+		SccProjectUniqueName3 = TestProject1\\TestProject1.csproj
+		SccProjectName3 = TestProject1
+		SccLocalPath3 = TestProject1
 	EndGlobalSection
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = Plan B Html Parser.vsmdi
@@ -56,6 +60,12 @@ Global
 		{9E7D5692-C2E9-4219-977E-143CC75B5737}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{9E7D5692-C2E9-4219-977E-143CC75B5737}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{9E7D5692-C2E9-4219-977E-143CC75B5737}.Release|x86.ActiveCfg = Release|Any CPU
+		{730F03D9-CB96-43A9-88E3-A8687A66CF5E}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{730F03D9-CB96-43A9-88E3-A8687A66CF5E}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{730F03D9-CB96-43A9-88E3-A8687A66CF5E}.Debug|x86.ActiveCfg = Debug|x86
+		{730F03D9-CB96-43A9-88E3-A8687A66CF5E}.Release|Any CPU.ActiveCfg = Release|x86
+		{730F03D9-CB96-43A9-88E3-A8687A66CF5E}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{730F03D9-CB96-43A9-88E3-A8687A66CF5E}.Release|x86.ActiveCfg = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

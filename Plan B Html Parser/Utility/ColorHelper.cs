@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
 
 namespace PlanB.Html.Utility
 {
@@ -35,7 +36,7 @@ namespace PlanB.Html.Utility
                 v.Y = green / 255.0f;
                 v.Z = blue / 255.0f;
 
-                return Color.FromNonPremultiplied(v);
+                return new Color(v);
             }
             else
             {
